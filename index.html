@@ -3,21 +3,56 @@
 <head>
 	<title>Font Osm</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="work">
+	<script>
+		$(document).ready(function(){
+			$(".but").click(function(e){
+				$(".bc").removeClass("bc")
+				$('#'+e.currentTarget.id).addClass("bc");
+			})
+			$('#gmail').click(function(){
+				alert("\n\nGmail :      abdulrahmanatr01@gmail.com \n\nCopy this !!")
+			})
+			$('#what').click(function(){
+				alert('\n\nMobile & Whatsapp :       6379591874\n\nCopy this !!')
+			})
+		})
+	</script>
+	<div class="media">
+		<a href="https://instagram.com/_font_osm?igshid=5krkzk8l59v6" target="_blank"><img src="instagram.png" alt="instagram"></a>
+		<a href="https://www.youtube.com/channel/UCBvxYC9TAs7XT85_gP-Wwfg" target="_blank"><img src="youtube.png" alt="youtube"></a>
+		<img id="what" src="whatsapp.png" alt="whatsapp">
+		<img id="gmail" src="gmail.png" alt="gmail">
+	</div>
 
 	<header>
 		<h1><span>Font Osm</span></h1>
 		<div class="buttons">
-			<div class="but b1"><a href="#work">MY WORK</a></div>
-			<div class="but b2"><a href="#feature">FEATURE</a>  </div>
-			<div class="but b3"><a href="#charge">CHARGES</a>  </div>
-			<div class="but b4"><a href="#contact">CONTACT</a>  </div>
+			<div id="bt1" class="but bc"><a href="#work">MY WORK</a></div>
+			<div id="bt2" class="but"><a href="#feature">FEATURE</a>  </div>
+			<div id="bt3"  class="but"><a href="#charge">CHARGES</a>  </div>
+			<div id="bt4"  class="but"><a href="#contact">CONTACT</a>  </div>
 		</div>
 	</header>
 
 
 	<main>
+
+		<section class="aboutme">
+			<h2>About Me</h2>
+			<div>
+					<img src="abdul (2).jpg" alt="Artist Photo">
+					<p>
+						<b>ARTIST : </b>Abdul Rahman <br><br>
+						Hi, I am abdul in Attur, Salem which is in the state of Tamilnadu. I started drawing at my 4th standard of my schooling.
+						Before now I was doing lot of artworks just for fun, now I've started taking orders from people.
+						You can check out my finished orders in youtube and instagram, you can also check the samples I have added below.
+						If you want me to work for you, feel free to contact me.Thank You!! 
+					</p>
+			</div>
+		</section>
 		<section >
 			<h2>What are all I do....</h2>
 			<div class="container">
@@ -119,9 +154,6 @@
 		<b>CONTACT ME</b>
 		<br>Mobile&Whatsapp : 6379591874
 		<br>Email : abdulrahmanatr01@gmail.com
-		<br>Social Media : <br>
-		<a href="https://instagram.com/_font_osm?igshid=5krkzk8l59v6" target="_blank"><img src="instagram.png" alt="instagram"></a>
-		<a href="https://www.youtube.com/channel/UCBvxYC9TAs7XT85_gP-Wwfg" target="_blank"><img src="youtube.png" alt="youtube"></a>
 	</footer>
 </body>
 </html>
