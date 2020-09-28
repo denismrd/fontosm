@@ -6,6 +6,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="work">
+	<div class="alert dis">
+		<div>
+			<span></span>
+			<button>OK</button>
+		</div>
+	</div>
 	<script>
 		$(document).ready(function(){
 			$(".but").click(function(e){
@@ -13,10 +19,15 @@
 				$('#'+e.currentTarget.id).addClass("bc");
 			})
 			$('#gmail').click(function(){
-				alert("\n\nGmail :      abdulrahmanatr01@gmail.com \n\nCopy this !!")
+				$(".alert div span").html("Gmail :&nbsp&nbsp abdulrahmanatr01@gmail.com<br><br>Copy this !!")
+				$(".alert").removeClass("dis");
 			})
 			$('#what').click(function(){
-				alert('\n\nMobile & Whatsapp :       6379591874\n\nCopy this !!')
+				$(".alert div span").html("Mobile & Whatsapp :&nbsp&nbsp 6379591874<br><br>Copy this !!")
+				$(".alert").removeClass("dis");
+			})
+			$(".alert div button").click(function(){
+				$(".alert").addClass("dis");
 			})
 		})
 	</script>
