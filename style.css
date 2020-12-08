@@ -216,6 +216,11 @@ header .nav-icon .nav-line:not(:last-child) {
   border-top: 0.1px solid #505050;
   margin-bottom: 10rem;
 }
+@media (max-width: 500px) {
+  .nav-bar-container .nav-bar .foot {
+    margin-bottom: 8vh;
+  }
+}
 
 .nav-icon-toggle {
   background-color: transparent !important;
